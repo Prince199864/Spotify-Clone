@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+/* Css Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    padding: 0px 12px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 10px;
+}
+
+.container {
+    min-height: 73vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 34px;
+    background: url("/Images/headphones-g927c4f856_1920.jpg") no-repeat center center/cover;
+
+}
+
+.songList {
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.songInfo img{
+    width: 70px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 0px 15px; 
+}
+.songItemContainer{
+    margin-top: 50px;
+}
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 48px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+margin: 0 23px;
+}
+.timestamp i{
+cursor: pointer;
+}
