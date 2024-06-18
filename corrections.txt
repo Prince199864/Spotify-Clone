@@ -1,0 +1,8 @@
+* Songlist mai first child (song) nhi dikh rha scroll krne pr.
+- Flex start krdiya to dikh rha hai 
+
+* Abhi play next aur previous button ki position layout shift kr rhi hai(Jab bhi gaana play kr rhe aur jab bhi songInfo update ho rha).
+
+* .songs mai hover daala hai , can make it more perfect because height differences hai
+
+* cardContainer mai paddingbottom dena padega( pading-bottom : 30vh) jisse playbar card ko ekdum cover na kre while scrolling.(card container ki max height 65vh set krne se vo height wale devices mai ganda dikh rha)

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify | Clone using HTML,CSS and JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container flex justify-center">
+        <div class="left bg-grey">
+            <div class="home flex bg-grey rounded p-1 m-1">
+                <div class="logo-box flex align-center">
+                    <div class="logo pointer"><img class="invert" src="images/logo.svg" alt="logo"></div>
+                    <div class="cross"><img class="invert" src="images/cross.svg" alt=""></div>
+                </div>
+                <ul class="pointer">
+                    <li>
+                        <img class="invert" src="images/home.svg" alt="home">Home
+                    </li>
+                    <li class="no-hover">
+                        <img class="invert " src="images/search.svg" alt="search"><span>Search</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="library flex bg-grey rounded m-1">
+                <div class="mainLib flex align-center">
+                    <div class="lib-one no-hover pointer flex align-center">
+                        <img class="invert" src="images/library.svg" alt="library"><span>Your Library</span>
+                    </div>
+                    <div class="lib-two pointer"><img class="svg-filter" src="images/plus.svg" alt="plus"></div>
+                </div>
+                <div class="songList flex">
+
+                </div>
+            </div>
+            <div class="footer flex bg-grey rounded p-1 m-1">
+                <div class="part-one flex">
+                    <div><a href=""><span class="no-hover">Legal</span></a></div>
+                    <div><a href=""><span class="no-hover">Privacy Center</span></a></div>
+                    <div><a href=""><span class="no-hover">Privacy Policies</span></a></div>
+                    <div><a href=""><span class="no-hover">Cookies</span></a></div>
+                    <div><a href=""><span class="no-hover">About Ads</span></a></div>
+                    <div><a href=""><span class="no-hover">Accessibility</span></a></div>
+                </div>
+                <div class="part-two flex align-center">
+                    <img class="invert" src="images/language.svg" alt="languages">English
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded m-1">
+            <div class="header flex align-center">
+                <div class="nav flex justify-center align-center">
+                    <div class="hamburger"> <img class="invert" src="images/hamburger.svg" alt="hamburger"></div>
+                    <div class="nav-icons flex">
+                        <svg class="svg-filter" width="27" height="27" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#9c9c9c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="svg-filter" width="27" height="27" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#9c9c9c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn1 no-hover">Sign Up</button>
+                    <button class="btn2">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <div class="spothead flex align-center">
+                    <h2>Spotify Playlists</h2>
+                    <span>Show All</span>
+                </div>
+                <div class="cardContainer flex">
+                    <!-- cards will populate here -->
+                </div>
+                <div class="playBar flex justify-center align-center">
+                    <div class="playBarOne flex align-center">
+                        <div class="songInfo text-center"></div>
+                        <div class="songButtons flex justify-center align-center">
+                            <img class="invert pointer" id="previous" src="images/previousButton.svg" alt="previous">
+                            <img class="invert pointer" id="play" src="images/playButton.svg" alt="play">
+                            <img class="invert pointer" id="next" src="images/nextButton.svg" alt="next">
+                        </div>
+                        <div class="songTools flex align-center">
+                            <div class="songTime">
+                                <!-- CWH video number 84 , start from 1:38:00 -->
+                            </div>
+                            <div class="volume flex align-center pointer">
+                                <div class="volumeImg">
+                                    <img class="invert" src="images/volume.svg" alt="">
+                                </div>
+                                <span class="volumeRange"><input class="invert pointer" type="range" name="myRange"
+                                        id="range"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playBarTwo pointer">
+                        <div class="seekBar">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

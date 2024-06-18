@@ -1,0 +1,86 @@
+.red-border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-grey {
+    background-color: #121212;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.rounded {
+    border-radius: 9px;
+}
+
+.pointer {
+    cursor: pointer;
+
+}
+
+.p-1 {
+    padding: 23px;
+}
+
+.m-1 {
+    margin: 8px 5px;
+}
+
+.no-hover {
+    color: #9b9b9b;
+}
+
+.no-hover:hover {
+    color: #ffffff;
+}
+
+.svg-filter:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(217deg) brightness(103%) contrast(102%);
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+/* For webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: #000;
+    /* background color of the track */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #333;
+    /* color of the scrollbar handle */
+    border-radius: 5px;
+    /* round corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* color of the scrollbar handle on hover */
+}
